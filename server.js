@@ -4,7 +4,7 @@ const routes = require('./src/routes');
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || +5000,
-    host: process.env.NODE_ENV || 'localhost',
+    host: process.env.NODE_ENV !== 'production' ? 'localhost' : 'https://bookshelf-api-nafi.herokuapp.com/books',
     routes: {
       cors: {
         origin: ['*'],
