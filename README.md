@@ -16,3 +16,6 @@ Atau bisa menggunakan file testing yang saya sebutkan di atas dengan cara:
 1. Ekstrak file zip tersebut
 2. Buka software Postman Desktop
 3. Klik tombol import yang berada di atas panel kiri
+4. Klik tombol *Upload Files* dan import dua file dari zip yang sudah diekstrak
+5. Bookshelf API Test Collection dan Environtment akan tersedia di Postman
+6. Pilih Environtment Bookshelf API Test pada dropdown di atas panel kanan (pada umumnya terisi *No Environtment* secara default)
