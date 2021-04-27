@@ -4,7 +4,8 @@
   "description": "Bookshelf API as submission for Belajar Membuat Aplikasi Back-End Untuk Pemula course's at Dicoding",
   "main": "server.js",
   "engines": {
-    "node": "15.6.0"
+    "node": "15.6.0",
+    "npm": "7.4.0"
   },
   "scripts": {
     "start": "node server.js",
