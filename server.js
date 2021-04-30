@@ -1,5 +1,5 @@
 const Hapi = require('@hapi/hapi');
-const routes = require('./src/routes');
+const routes = require('./router/bookRoute');
 
 const init = async () => {
   const server = Hapi.server({
