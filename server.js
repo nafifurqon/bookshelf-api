@@ -1,5 +1,5 @@
 const Hapi = require('@hapi/hapi');
-const routes = require('./router/bookRoute');
+const bookRoute = require('./router/bookRoute');
 
 const init = async () => {
   const server = Hapi.server({
@@ -12,7 +12,20 @@ const init = async () => {
     },
   });
 
-  await server.route(routes);
+  server.route({
+    method: 'GET',
+    path: '/',
+    handler: (request, h) => {
+      const response = h.response({
+        status: 'success',
+        message: 'Welcome to Bookshelf API. Please access "/books" path.',
+      });
+      response.code(200);
+      return response;
+    },
+  });
+
+  await server.route(bookRoute);
 
   await server.start();
   console.log(`Server running at ${server.info.uri}`);
