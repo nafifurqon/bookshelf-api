@@ -4,7 +4,7 @@ const {
   getBookByIdHandler,
   updateBookByIdHandler,
   deleteBookByIdHandler,
-} = require('../handler/bookHandler');
+} = require('../handler/book');
 
 const bookRoute = [
   {
